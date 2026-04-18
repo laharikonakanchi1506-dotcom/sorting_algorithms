@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting Algorithm Visualizers</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #fff; font-family: system-ui, sans-serif; color: #222; }
+    .container { padding: 3rem 1.5rem; max-width: 680px; margin: 0 auto; }
+    h1 { font-size: 24px; font-weight: 500; margin-bottom: 0.5rem; }
+    .desc { font-size: 14px; color: #666; margin-bottom: 2.5rem; }
+    .cards { display: flex; flex-direction: column; gap: 14px; }
+    .card {
+      display: flex; align-items: center; justify-content: space-between;
+      border: 1px solid #ddd; border-radius: 12px; padding: 1.25rem 1.5rem;
+      text-decoration: none; color: inherit; transition: background 0.15s, border-color 0.15s;
+    }
+    .card:hover { background: #f9f9f9; border-color: #bbb; }
+    .card-left { display: flex; align-items: center; gap: 1rem; }
+    .tag { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 6px; color: #fff; white-space: nowrap; }
+    .card-title { font-size: 16px; font-weight: 500; margin-bottom: 2px; }
+    .card-sub { font-size: 12px; color: #888; }
+    .arrow { font-size: 18px; color: #bbb; }
+    footer { margin-top: 3rem; font-size: 12px; color: #bbb; text-align: center; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Sorting algorithm visualizers</h1>
+  <p class="desc">Interactive step-by-step animations for three classic sorting algorithms.</p>
+
+  <div class="cards">
+    <a class="card" href="bubble-sort.html">
+      <div class="card-left">
+        <div class="tag" style="background:#E24B4A;">Bubble</div>
+        <div>
+          <div class="card-title">Bubble sort</div>
+          <div class="card-sub">Compare adjacent elements and swap — O(n²)</div>
+        </div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="card" href="insertion-sort.html">
+      <div class="card-left">
+        <div class="tag" style="background:#7F77DD;">Insertion</div>
+        <div>
+          <div class="card-title">Insertion sort</div>
+          <div class="card-sub">Insert each element into its correct position — O(n²) / O(n) best</div>
+        </div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="card" href="selection-sort.html">
+      <div class="card-left">
+        <div class="tag" style="background:#1D9E75;">Selection</div>
+        <div>
+          <div class="card-title">Selection sort</div>
+          <div class="card-sub">Find the minimum each pass — O(n²), fewest swaps</div>
+        </div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <footer>Each visualizer supports custom input, speed control, pause, and step-by-step mode.</footer>
+</div>
+</body>
+</html>
